@@ -1,0 +1,33 @@
+---
+title: ''
+author: "Granger Moch"
+date: "November 4, 2014"
+output: html_document
+---
+## Histogram
+
+```{r results='asis'}
+suppressPackageStartupMessages(library(googleVis))
+set.seed(123)
+datHist=data.frame(A=rpois(100, 20),
+                   B=rpois(100, 5),
+                   C=rpois(100, 50))
+
+Hist <- gvisHistogram(datHist, options=list(
+  legend="{ position: 'top', maxLines: 2 }",
+  colors="['#5C3292', '#1A8763', '#871B47']",
+  width=750, height=360))
+plot(Hist)
+```
+<iframe src="hist.html" height=500 width=900> </iframe>
+
+## Line Chart
+
+```{r results='asis'}
+df=data.frame(country=c("US", "GB", "BR"), 
+              val1=c(10,13,14), 
+              val2=c(23,12,32))
+Line <- gvisLineChart(df,options=list(width=750, height=500))
+plot(Line)
+```
+<iframe src="line.html" height=500 width=900> </iframe>
