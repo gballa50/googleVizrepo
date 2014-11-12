@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>BarChartIDa4b768669b9</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<style type="text/css">
+body {
+  color: #444444;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  }
+  a {
+  color: #4D87C7;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+ <!-- BarChart generated in R 3.1.1 by googleVis 0.5.6 package -->
+<!-- Tue Nov  4 19:53:09 2014 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataBarChartIDa4b768669b9 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ "Atlanta Hawks",
+291505,
+109029 
+],
+[
+ "Boston Celtics",
+6871597,
+916615 
+],
+[
+ "Brooklyn Nets",
+748966,
+212137 
+],
+[
+ "Charlotte Bobcats",
+152961,
+96705 
+],
+[
+ "Chicago Bulls",
+7911776,
+636775 
+],
+[
+ "Cleveland Cavaliers",
+926913,
+152505 
+],
+[
+ "Dallas Mavericks",
+2447318,
+264565 
+],
+[
+ "Denver Nuggets",
+904779,
+141084 
+],
+[
+ "Detroit Pistons",
+459890,
+116533 
+],
+[
+ "Golden State Warriors",
+385970,
+148346 
+],
+[
+ "Houston Rockets",
+627870,
+159876 
+],
+[
+ "Indiana Pacers",
+215140,
+125801 
+],
+[
+ "Los Angeles Clippers",
+630988,
+226481 
+],
+[
+ "Los Angeles Lakers",
+15760776,
+2914852 
+],
+[
+ "Memphis Grizzlies",
+207132,
+121846 
+],
+[
+ "Miami Heat",
+7349303,
+997307 
+],
+[
+ "Milwaukee Bucks",
+234029,
+99291 
+],
+[
+ "Minnesota Timberwolves",
+262307,
+128671 
+],
+[
+ "New Orleans Hornets",
+299447,
+107743 
+],
+[
+ "New York Knicks",
+3338319,
+490302 
+],
+[
+ "Oklahoma City Thunder",
+1763689,
+384363 
+],
+[
+ "Orlando Magic",
+1665269,
+1088992 
+],
+[
+ "Philadelphia 76ers",
+306497,
+156236 
+],
+[
+ "Phoenix Suns",
+741558,
+153465 
+],
+[
+ "Portland Trail Blazers",
+422941,
+123708 
+],
+[
+ "Sacramento Kings",
+237707,
+105125 
+],
+[
+ "San Antonio Spurs",
+1440729,
+239508 
+],
+[
+ "Toronto Raptors",
+378894,
+136399 
+],
+[
+ "Utah Jazz",
+364706,
+138590 
+],
+[
+ "Washington Wizards",
+173114,
+115048 
+] 
+];
+data.addColumn('string','Team');
+data.addColumn('number','Facebook.Friends');
+data.addColumn('number','Twitter.Followers');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartBarChartIDa4b768669b9() {
+var data = gvisDataBarChartIDa4b768669b9();
+var options = {};
+options["allowHtml"] = true;
+options["title"] = "Teams' Facebook Friends Vs. Twitter Followers For 2011-2012 Season";
+options["titleTextStyle"] = {color:'blue', 
+                                           fontName:'Orbitron', 
+                                           fontSize:16};
+options["backgroundColor"] = "#D3D3D3";
+options["vAxis"] = {gridlines:{color:'red', count:3}};
+options["hAxis"] = {title:'Friends/Followers', titleTextStyle:{color:'blue'}};
+options["series"] = [{color:'blue', targetAxisIndex: 0}, 
+                                   {color: 'orange',targetAxisIndex:1}];
+options["vAxes"] = [{title:'Team'}];
+options["legend"] = "right";
+options["width"] =   1000;
+options["height"] =    700;
+
+
+    var chart = new google.visualization.BarChart(
+    document.getElementById('BarChartIDa4b768669b9')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "corechart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartBarChartIDa4b768669b9);
+})();
+function displayChartBarChartIDa4b768669b9() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBarChartIDa4b768669b9"></script>
+ 
+<!-- divChart -->
+  
+<div id="BarChartIDa4b768669b9" 
+  style="width: 1000; height: 700;">
+</div>
+ <div><span>Data: data &#8226; Chart ID: <a href="Chart_BarChartIDa4b768669b9.html">BarChartIDa4b768669b9</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.6</a></span><br /> 
+<!-- htmlFooter -->
+<span> 
+  R version 3.1.1 (2014-07-10) 
+  &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://google-developers.appspot.com/chart/interactive/docs/gallery/barchart">Documentation and Data Policy</a>
+</span></div>
+</body>
+</html>
