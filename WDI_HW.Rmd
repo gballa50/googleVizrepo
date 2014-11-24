@@ -1,0 +1,38 @@
+---
+title: "WDI_HW"
+author: "Granger Moch"
+date: "November 18, 2014"
+output: html_document
+---
+library(shiny)
+library(ggplot2)
+library(googleVis)
+library(dplyr)
+library(reshape2)
+
+library(WDI)
+str(WDI_data)
+
+roadsunfiltered=read.csv(file="roads.csv")
+
+roadsdf= roadsunfiltered %>%
+select(1:2, 34:54)%>%
+filter(X1990!="NA", X1991!="NA", X1992!="NA", X1993!="NA", X1994!="NA", X1995!="NA", X1996!="NA", X1997!="NA", X1998!="NA", X1999!="NA", X2000!="NA", X2001!="NA", X2002!="NA", X2003!="NA", X2004!="NA", X2005!="NA", X2006!="NA", X2007!="NA", X2008!="NA", X2009!="NA", X2010!="NA")
+
+str(roadsdfmelt)
+
+roadsdfmelt= melt(roadsdf, id.vars=c("Country.Name", "Country.Code"))
+roadsdfmelt$year= substr(roadsdfmelt$variable, 2, 5)
+
+roadsdfmelt$year= as.numeric(roadsdfmelt$year)
+
+str(roadsdfmelt)
+
+roadsdfmeltfiltered= roadsdfmelt %>%
+filter(value!="NA")
+
+
+roadsMotion=gvisMotionChart(roadsdfmelt, 
+                       idvar="Country.Name", 
+                       timevar="year")
+plot(roadsMotion)
