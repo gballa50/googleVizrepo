@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>WDI Visualisations</title>
+<center><h1> WDI HW Assignment: </h1>
+<h3> Will Murphy and Granger Moch </h3>
+<h5> November 24th, 2014 </h5> </center>
+<hr>
+
+<center><body>
+
+<h3> Motion Chart Showing Inflation Rates from 1990-2010 </h3>
+<iframe src= "http://gballa50.github.io/googleVizrepo/inflationmotion.html" width= 800 height=600> </iframe>
+<p> This graph shows the fluctuations of inflation rates for a variety of countries. 
+</br>
+</br>
+<hr>
+
+<h3> Motion Chart Showing Fertility Rates from 1961-2010 (births per woman) </h3>
+<iframe src= "http://gballa50.github.io/googleVizrepo/fertMotion.html" width= 800 height=600> </iframe>
+<p> This motion chart reveals the general trend towards women having less children.  In developing countries such as Kenya, the drop in fertility rates is likely due in part to increased access to information as it relates to sexual activity, and/or increased access to contraceptive devices. Having said that, we feel it would be interesting to investigate causes for decreasing fertility rates in developed countries such as the US. </p>   
+
+</br>
+</br>
+<hr>
+
+<h3> Motion Chart Showing GDP Per Employed Person from 1990-2010 (constant 1990 PPP $) </h3>
+<iframe src= "http://gballa50.github.io/googleVizrepo/gdmotion.html" width= 800 height=600> </iframe>
+<p>GDP per person employed is gross domestic product (GDP) divided by total employment in the economy. Purchasing power parity (PPP) GDP is GDP converted to 1990 constant international dollars using PPP rates. An international dollar has the same purchasing power over GDP that a U.S. dollar has in the United States.</p>
+
+</br>
+</br>
+<hr>
+
+<h3> Motion Chart Showing Percentage of Paved Roads from 1990-2010 </h3>
+<iframe src= "http://gballa50.github.io/googleVizrepo/roadsMotion.html" width= 800 height=600> </iframe>
+
+<p> This graph shows a general trend towards paved roads in alignment with the gradual development of a country over time. Certain countries, such as Denmark and Austria, have maintained a very high percentage of paved roads over the years.  On the contrary, less developed countries such as Oman show fairly constant growth of paved roads over time. <p>
+</br>
+</br>
+<hr>
+
+<h3> Motion Chart Showing Mortality Rates For Children Under 5 from 1961-2010 </h3>
+</br>
+<iframe src= "http://gballa50.github.io/googleVizrepo/mortMotion.html" width= 800 height=600> </iframe>
+
+<p>According to this visualization, mortality rates for children under 5 years of age today have dropped significantly from rates in 1961. Notably, the Rwandan Genocide's toll on the infant youth is evidenced in 1994 by a sharp increase in mortality rates.</p>
+</br>
+</br>
+<hr>
+
+<h3> Motion Chart Showing Percentage of Females In the Labor Force from 1990-2010 </h3>
+</br>
+<iframe src= "http://gballa50.github.io/googleVizrepo/femalelaborratemotion.html" width= 800 height=600> </iframe>
+<p> This graph reveals a general increase in the percentage of females in the labor force over time.  As somewhat expected, women's involvement in the labor force is very low in Arab countries such as Pakistan and Iraq. </p>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow13.js"></script>
+<noscript>Not seeing a <a href="http://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+
+</body></center>
+
+</html>
